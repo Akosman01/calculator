@@ -1,0 +1,124 @@
+body {
+    background-image: url(12011.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    
+}
+span {
+    color: rgb(68, 0, 255);
+    top: 20px;
+    left: 40px;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+}
+.goa {
+    color: rgb(100, 100, 248);
+}
+.T {
+    color: rgb(227, 113, 255);
+}
+.ech {
+    color: rgb(255, 100, 100);
+}
+.body-2 {
+    background-color: rgb(20, 20, 20);
+    /*width: 90%;*/
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 50px;
+    Min-width: 390px;
+    max-width: 450px;
+    max-height: 650px;
+    z-index: 100;
+    position: relative;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.74);
+}
+.display {
+    width: 70%;
+    height: 70px;
+    background-color: rgb(5, 100, 92);
+    display: block;
+    margin: 50px auto 30px auto;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: inset 5px 3px 15px rgba(2, 19, 17, 0.729);
+    font-size: 3em;
+    font-weight: bold;
+    text-align: right;
+    z-index: 600;
+
+}
+.keys {
+    margin: 10px auto;
+    width: 65%;
+    border-style: solid;
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    max-height: 400px;
+    min-height: 350px;
+    border-width: 1px;
+    
+
+    
+
+}
+button{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: solid;
+    font-size: 1.5rem;
+    border: none;
+}
+
+button:hover{
+    border-style: solid;
+    
+}
+button:active {
+    background-color: rgb(128, 128, 243);
+}
+.clear {
+    width: 115px;
+    background-color: rgb(253, 67, 67);
+    color: white;
+    transition: all 0.15s;
+}
+.clear:active {
+    color: rgb(253, 67, 67);
+    background-color: whitesmoke;
+}
+.equal {
+    
+    
+    margin-top: 17px;
+    height: 105px;
+    background-color: rgb(75, 250, 75);
+    color: rgb(0, 0, 0);
+    
+}
+.equal:active {
+    color: rgb(75, 250, 75);
+    background-color: whitesmoke;
+}
+.equalD {
+    display: inline-block;
+    vertical-align: top;
+}
+.lowerNum {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -10px;
+}

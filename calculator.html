@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calculator.css">
+        <title>Goatech Calculator</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div class="body-2">
+            <span class="goa">Goa</span><span class="T">T</span><span class="ech">ech</span>
+            
+            <div class="display" id="show"> </div>
+            <div class="keys">
+                <p>
+                    <button class="clear"
+                    onclick="
+                    solve = updatecalculation('clear');
+                    ">Clear</button>
+                    <button onclick="
+                    let solve = updatecalculation('/');
+                    ">/</button>
+                    <button onclick="
+                    solve = updatecalculation('*');
+                    ">x</button>
+                </p>
+                <p>
+                    <button onclick="
+                    solve = updatecalculation('7');
+                    ">7</button>
+                    <button onclick="
+                    solve = updatecalculation('8');
+                    ">8</button>
+                    <button onclick="
+                    solve = updatecalculation('9');
+                    ">9</button>
+                    <button onclick="
+                    solve = updatecalculation('-');
+                    ">-</button>
+                </p>
+                <p>
+                    <button onclick="
+                    solve = updatecalculation('4');
+                    ">4</button>
+                    <button onclick="
+                    solve = updatecalculation('5');
+                    ">5</button>
+                    <button onclick="
+                    solve = updatecalculation('6');
+                    ">6</button>
+                    <button onclick="
+                    solve = updatecalculation('+');
+                    ">+</button>
+                </p>
+                <div>
+                    <div class="lowerNum">
+                        <p>
+                    
+                                    <button onclick="
+                            solve = updatecalculation('1');
+                            ">1</button>
+                                    <button onclick="
+                            solve = updatecalculation('2');
+                            ">2</button>
+                                    <button onclick="
+                            solve = updatecalculation('3');
+                            ">3</button>
+                        </P>
+                        <p>
+                                    <button onclick="
+                            solve = updatecalculation('%');
+                            ">%</button>
+                                    <button onclick="
+                            solve = updatecalculation('0');
+                            ">0</button>
+                                    <button onclick="
+                            solve = updatecalculation('.');
+                            ">.</button> 
+                        </p>
+                    </div>
+                    <div class="equalD">
+                        <button class="equal" onclick="
+                        solve = updatecalculation('=');
+                        ">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            calculation=''
+               function updatecalculation(calculate) {
+                    if (calculate === '1') {
+                        calculation+='1'   
+                    }else if (calculate === '2') {
+                        calculation+='2';
+                    }else if (calculate === '3') {
+                        calculation+='3';
+                    }else if (calculate === '4') {
+                        calculation+='4';
+                    }else if (calculate === '5') {
+                        calculation+='5';
+                    }else if (calculate === '6') {
+                        calculation+='6';
+                    }else if (calculate === '7') {
+                        calculation+='7';
+                    }else if (calculate === '8') {
+                        calculation+='8';
+                    }else if (calculate === '9') {
+                        calculation+='9';
+                    }else if (calculate === '0') {
+                        calculation+='0';
+                    }else if (calculate === '+') {
+                        calculation+= '+'
+                    }else if (calculate === '-') {
+                        calculation+= '-'
+                    }else if (calculate === '*') {
+                        calculation+= '*'
+                    }else if (calculate === '/') {
+                        calculation+= '/'
+                    }else if (calculate === 'clear'){
+                        console.log('Calculator was Reset')
+                        calculation='';
+                    }else if (calculate === '=') {
+                        eval(calculation)
+                        calculation=eval(calculation)
+                    }else if (calculate === '%') {
+                        calculation = calculation / 100;
+                    }else if (calculate === '.') {
+                        calculation+='.'
+                    }else{
+                        console.log('Error')
+                    }
+
+                    document.getElementById('show').innerText = '';
+                    let element = document.createElement('div');
+                    element.innerHTML = calculation
+                    let screen = document.getElementById('show').innerHTML;
+                    screen = calculation;
+                    console.log(screen)
+                    console.log(element)
+                    show.appendChild(element);
+                    /*console.log(calculation)*/
+                }
+                
+
+
+                    
+                    
+                
+
+
+
+                /*function additem(food) {
+            let element = document.createElement('div');
+            element.innerHTML = food;
+            let id = document.getElementById('cart').innerText
+            id = food
+            console.log(id)
+            cart.appendChild(element);
+        }*/
+        </script>
+    </body>
+</html>
